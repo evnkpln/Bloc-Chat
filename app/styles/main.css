@@ -1,0 +1,14 @@
+*, *::before, *::after{
+    -moz-box-sizing: border-box;
+    -wbkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%; 
+    font-size: 100%;
+}
+
+body {          
+    min-height: 100%;
+}

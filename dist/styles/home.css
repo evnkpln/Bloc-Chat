@@ -1,0 +1,14 @@
+.chatbar{
+    position: fixed; 
+    background-color: lightgray;
+    height: 100%;
+    width: 15%;
+    min-width: 10rem;
+}
+
+.hero-title{
+    font-size: 30px;
+}
+.room{
+    font-size : 19px;
+}
