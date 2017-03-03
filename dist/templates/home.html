@@ -1,6 +1,8 @@
-<nav class="chatbar">
+<nav class="chatbar" ng-controller="AddRoomCtrl as addRoom">
     <h1 class ="hero-title">Bloc Chat</h1>
+    <button type="button" ng-click="roomMenu()">Add Room</button>
+    <button type="button" ng-click="home.addRoom()">Instant Add</button>
     <div class="room-list" ng-repeat="room in home.rooms">
-        <h3 class="room">{{room.$id}}</h2>
+        <h3 class="room">{{room.name}}</h2>
     </div>
 </nav>
