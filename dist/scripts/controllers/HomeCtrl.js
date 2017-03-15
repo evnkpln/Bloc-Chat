@@ -1,12 +1,13 @@
 (function() {
-    function HomeCtrl(Room, $scope) {
+    function HomeCtrl(Room, Message, $scope) {
         this.rooms = Room.all;
         this.addRoom = function(){
             Room.addRoom({foo: "bar"});
         };
+        $scope.messagesObject = Message;
     }
     
     angular
         .module('blocChat')
-        .controller('HomeCtrl', ['Room', '$scope', HomeCtrl]);
+        .controller('HomeCtrl', ['Room', 'Message', '$scope', HomeCtrl]);
 })();

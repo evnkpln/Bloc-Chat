@@ -12,3 +12,21 @@
 .room{
     font-size : 19px;
 }
+.chat-display{
+    position: fixed;
+    left: 16%;
+    width: 74%;
+    background-color: lavender;
+}
+.message{
+}
+.content{
+    font-size: 1rem;
+}
+.user{
+    color:red;
+}
+.timestamp{
+    position: relative;
+    left: 80%;
+}
