@@ -1,0 +1,2 @@
+Username entry should not be dismissable.
+Style and sort chat message.
