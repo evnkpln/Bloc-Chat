@@ -1,6 +1,7 @@
 (function() {
     function HomeCtrl(Room, Message, $scope) {
         this.rooms = Room.all;
+        this.typedMessage = "";
         this.addRoom = function(){
             Room.addRoom({foo: "bar"});
         };

@@ -1,15 +1,18 @@
 <nav class="chatbar" ng-controller="AddRoomCtrl as addRoom">
     <h1 class ="hero-title">Bloc Chat</h1>
     <button type="button" ng-click="roomMenu()">Add Room</button>
-    <button type="button" ng-click="messagesObject.getByRoomID('-KeMMrMsJS_LMYza8a5t')">Set Room</button>
     <div class="room-list" ng-repeat="room in home.rooms">
         <h3 class="room" ng-click="messagesObject.getByRoomID(room.$id)">{{room.name}}</h2>
     </div>
 </nav>
 <div class="chat-display">
     <div class="message" ng-repeat="entry in messagesObject.roomMessages">
-        <h4 class="user">{{entry.username}}</h4>
+        <h4 class="user" ng-style="messagesObject.userStyle(entry.username)">{{entry.username}}</h4>
         <h3 class="content">{{entry.content}}</h3>
         <h5 class="timestamp">{{entry.sentAt}}</h5>
     </div>
+</div>
+<div class="message-place">
+    <input class="message-input" type="text" ng-model="home.typedMessage">
+    <button class="message-submit" ng-click="messagesObject.send(home.typedMessage)">Send</button>
 </div>
